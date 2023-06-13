@@ -40,7 +40,7 @@ function PTOTPDF() {
             />
           ) : overview ? (
             <div>
-              <p className="image-label">Intake English</p>
+              <p className="image-label"></p>
               <img
                 className="img-thumbnail shadow-2xl hover:border-blue-500 cursor-pointer"
                 src=""

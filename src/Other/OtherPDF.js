@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FallingLines } from "react-loader-spinner";
 
 function OtherPDF() {
-  
+
   const [overview, setOverview] = useState(true);
 
   const [isLoading, setIsLoading] = useState(false);
@@ -40,7 +40,7 @@ function OtherPDF() {
             />
           ) : overview ? (
             <div>
-              <p className="image-label">Intake English</p>
+              <p className="image-label"></p>
               <img
                 className="img-thumbnail shadow-2xl hover:border-blue-500 cursor-pointer"
                 src=""
