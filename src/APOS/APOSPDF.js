@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FallingLines } from "react-loader-spinner";
 
-function APOSPDF() {
+function APOSPDF({file}) {
 
   const [overview, setOverview] = useState(true);
 
@@ -25,6 +25,7 @@ function APOSPDF() {
       }, 2000); // Simulating a 2-second delay before showing the iframe
     }
   }, [isLoading]);
+  console.log(file);
 
   return (
     <div className="container">
@@ -53,7 +54,7 @@ function APOSPDF() {
                 title=""
                 id=""
                 style={{ border: "1px" }}
-                src=""
+                src={file.PDF_path}
                 frameborder="1"
                 height="450"
                 width="450"

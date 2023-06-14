@@ -1,4 +1,5 @@
 import {Routes, Route} from "react-router-dom"
+import {useState, useEffect} from "react";
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 import './App.css';
@@ -10,6 +11,18 @@ import APOS from "./APOS/APOS";
 import Other from "./Other/Other";
 
 function App() {
+
+const [aposFiles, setAposFiles] = useState([]);
+
+useEffect(() => {
+  fetch("http://localhost:3000/APOS")
+  .then(response => response.json())
+  .then(data => setAposFiles(data))
+},[])
+
+console.log(aposFiles);
+
+
   return (
     <div className="App">
       <Nav />
@@ -20,7 +33,7 @@ function App() {
 
               <Route path="/PTOT" element={<PTOT />} />
 
-              <Route path="/APOS" element={<APOS />} />
+              <Route path="/APOS" element={<APOS files={aposFiles}/>} />
 
               <Route path="/Other" element={<Other />} />
 
