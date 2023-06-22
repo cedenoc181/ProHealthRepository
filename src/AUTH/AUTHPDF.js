@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { FallingLines } from "react-loader-spinner";
 
-function AUTHPDF({metro}) {
+function AUTHPDF({arr}) {
 
   const [overview, setOverview] = useState(true);
 
   const [isLoading, setIsLoading] = useState(false);
 
-
+console.log(arr)
   const handleRevert = () => {
     setOverview(true);
   };
@@ -42,21 +42,20 @@ function AUTHPDF({metro}) {
               <p className="image-label"> </p>
               <img
                 className="img-thumbnail shadow-2xl hover:border-blue-500 cursor-pointer"
-                src=""
-                alt=""
+                src={arr.imgPath}
+                alt={arr.imgAlt}
                 onClick={handleClick}
               />
             </div>
           ) : (
             <div>
               <iframe
-                title=""
-                id=""
+                title={arr.imgAlt}
                 style={{ border: "1px" }}
-                src={metro}
+                src={arr.PDF_path}
                 frameborder="1"
-                height="650"
-                width="800"
+                height="500"
+                width="600"
               ></iframe>
               <button className="close mt-5" onClick={handleRevert}>
                 Close
