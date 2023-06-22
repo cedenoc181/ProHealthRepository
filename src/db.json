@@ -2,9 +2,9 @@
   "APOS" :[ 
 {
   "id" : 1,
-  "PDF_path" : "./APOS/APOS-files/APOS-TP.pdf",
+  "PDF_path" : "https://pdf.ac/216yo9",
   "Document_Title" : "APOS Treatment Plan English form",
-  "Image_path": "./APOS/APOS-Images/APOS-TP-Cover.jpg" 
+  "Image_path": "./APOS-Images/APOS-TP-cover.jpg" 
 },
 
 {

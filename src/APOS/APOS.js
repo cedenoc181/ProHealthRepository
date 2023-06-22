@@ -1,10 +1,9 @@
 import React from 'react';
 import "./APOS.css";
 import APOSPDF from "./APOSPDF";
-// import data from "..db.json";
 // import APOSImages from "./APOS-Images";
 
-function APOS({files}) {
+function APOS() {
 
   // const AposImages = require.context("./APOS-Images", true);
   // const AposFiles = require.context("./APOS-files", true);
@@ -12,9 +11,10 @@ function APOS({files}) {
   // const fileList = AposFiles.keys().map(file => AposFiles(file));
 
 
-// const [files, setFiles] = useState(data);
+// const [files, setFiles] = useState(fileList);
 // const [images, setImages] = useState(APOSImages);
-console.log(files);
+// console.log(fileList);
+// console.log(files);
 
   // try stack overflow solution to map through both arrays at the same time 
 
@@ -26,12 +26,12 @@ console.log(files);
              and post 1 year patient evaluations and more in both english and spanish.
           </p>
     </div>  
-        { files.map((file) => {
+        {/* { files.map((file) => {
           return(
-        <APOSPDF key={file.id} file={file} />
+        <APOSPDF key={file.index} file={file} />
         );
-        })}
-       
+        })} */}
+       <APOSPDF />
 
     </div>
   )

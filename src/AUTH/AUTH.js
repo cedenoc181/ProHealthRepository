@@ -1,8 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react'
 import "./AUTH.css"
 import AuthPDF from "./AUTHPDF"
+import metroplus from "./Auth-files/Auth-MetroPlus.pdf"
 
 function AUTH() {
+
+  const [metro, setMetro] = useState(metroplus)
+
+
+
 
   return (
     <div className="bg-gray-100 w-fill h-screen">
@@ -11,7 +17,7 @@ function AUTH() {
             Authorization PDF's available below, Orthonet, MetroPlus and more.
           </p>
     </div> 
-<AuthPDF />
+<AuthPDF metro={metro}/>
 
     </div>
   )

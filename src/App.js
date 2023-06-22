@@ -1,5 +1,5 @@
 import {Routes, Route} from "react-router-dom"
-import {useState, useEffect} from "react";
+// import {useState, useEffect} from "react";
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 import './App.css';
@@ -12,15 +12,15 @@ import Other from "./Other/Other";
 
 function App() {
 
-const [aposFiles, setAposFiles] = useState([]);
+// const [aposFiles, setAposFiles] = useState([]);
 
-useEffect(() => {
-  fetch("http://localhost:3000/APOS")
-  .then(response => response.json())
-  .then(data => setAposFiles(data))
-},[])
+// useEffect(() => {
+//   fetch("http://localhost:3000/APOS")
+//   .then(response => response.json())
+//   .then(data => setAposFiles(data))
+// },[])
 
-console.log(aposFiles);
+console.log();
 
 
   return (
@@ -33,8 +33,8 @@ console.log(aposFiles);
 
               <Route path="/PTOT" element={<PTOT />} />
 
-              <Route path="/APOS" element={<APOS files={aposFiles}/>} />
-
+              <Route path="/APOS" element={<APOS />} />
+             
               <Route path="/Other" element={<Other />} />
 
             </Routes>

@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { FallingLines } from "react-loader-spinner";
+// import tp from "./APOS-files/APOS-TP.pdf";
+// import tpi from "./APOS-Images/APOS-TP-cover.jpg" 
 
-function APOSPDF({file}) {
+function APOSPDF() {
 
   const [overview, setOverview] = useState(true);
 
@@ -25,11 +27,11 @@ function APOSPDF({file}) {
       }, 2000); // Simulating a 2-second delay before showing the iframe
     }
   }, [isLoading]);
-  console.log(file);
+  console.log();
 
   return (
     <div className="container">
- <div className="grid">
+ {/* <div className="grid">
         <div className="image-container">
           {isLoading ? (
             <FallingLines
@@ -43,7 +45,7 @@ function APOSPDF({file}) {
               <p className="image-label"></p>
               <img
                 className="img-thumbnail shadow-2xl hover:border-blue-500 cursor-pointer"
-                src=""
+                src={file.Image_path}
                 alt=""
                 onClick={handleClick}
               />
@@ -56,8 +58,8 @@ function APOSPDF({file}) {
                 style={{ border: "1px" }}
                 src={file.PDF_path}
                 frameborder="1"
-                height="450"
-                width="450"
+                height="650"
+                width="1050"
               ></iframe>
               <button className="close mt-5" onClick={handleRevert}>
                 Close
@@ -65,7 +67,7 @@ function APOSPDF({file}) {
             </div>
           )}
          </div>
-        </div>
+        </div> */}
 
 
 
