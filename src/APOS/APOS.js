@@ -1,20 +1,39 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./APOS.css";
 import APOSPDF from "./APOSPDF";
-// import APOSImages from "./APOS-Images";
+// APOS pdf
+import post_one_E from "./APOS-files/APOS-1-Year-intake-E.pdf"
+import post_one_S from "./APOS-files/APOS-1-year-intake-S.pdf"
+import checklist from "./APOS-files/APOS-Checklist.pdf"
+import APOS_Eval_E from "./APOS-files/APOS-Eval-E.pdf"
+import APOS_Eval_S from "./APOS-files/APOS-Eval-S.pdf"
+import fitting_SO_S from "./APOS-files/APOS-Fitting-SO-S.pdf"
+import fitting_SO from "./APOS-files/APOS-Fitting-SO.pdf"
+import follow_up from "./APOS-files/APOS-FU-Questionaire.pdf"
+import intake from "./APOS-files/APOS-New-pt-Intake.pdf"
+import questionaire from "./APOS-files/APOS-New-pt-Questionaire.pdf"
+import puso from "./APOS-files/APOS-PUSO.pdf"
+import tp from "./APOS-files/APOS-TP.pdf"
+import beneficiary from "./APOS-files/HF-APOS-Acknolwdgement.pdf"
+
+// APOS image cover
+
+import post_one_E_cover from "./APOS-Images/APOS-1-year-intake-E-cover.jpg"
+import post_one_S_cover from "./APOS-Images/APOS-1-year-intake-S-cover.jpg"
+import checklist_cover from "./APOS-Images/APOS-Checklist-cover.jpg"
+import APOS_Eval_E_cover from "./APOS-Images/APOS-Eval-E-cover.jpg"
+import APOS_Eval_S_cover from "./APOS-Images/APOS-Eval-S-cover.jpg"
+import fitting_SO_S_cover from "./APOS-Images/APOS-Fitting-SO-S.jpg"
+import fitting_SO_cover from "./APOS-Images/APOS-Fitting-SO.jpg"
+import follow_up_cover from "./APOS-Images/APOS-FU-Questionaire-cover.jpg"
+import intake_cover from "./APOS-Images/APOS-New-pt-Intake-E.jpg"
+import questionaire_cover from "./APOS-Images/APOS-New-pt-Questionaire-cover.jpg"
+import puso_cover from "./APOS-Images/APOS-PUSO-cover.jpg"
+import tp_cover from "./APOS-Images/APOS-TP-cover.jpg"
+import beneficiary_cover from "./APOS-Images/HF-APOS-Acknowledgement-advisory.jpg"
 
 function APOS() {
 
-  // const AposImages = require.context("./APOS-Images", true);
-  // const AposFiles = require.context("./APOS-files", true);
-  // const imageList = AposImages.keys().map(image => AposImages(image));
-  // const fileList = AposFiles.keys().map(file => AposFiles(file));
-
-
-// const [files, setFiles] = useState(fileList);
-// const [images, setImages] = useState(APOSImages);
-// console.log(fileList);
-// console.log(files);
 
   // try stack overflow solution to map through both arrays at the same time 
 
