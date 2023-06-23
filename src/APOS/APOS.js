@@ -37,71 +37,86 @@ function APOS() {
     {
       "id": 1,
       "PDF_path": post_one_E,
-      "imagePath":post_one_E_cover 
+      "imagePath":post_one_E_cover,
+      "imageAlt": "post one year" 
     },
     {
       "id":2,
       "PDF_path": post_one_S,
-      "imagePath":post_one_S_cover
+      "imagePath":post_one_S_cover,
+      "imageAlt": "post one year spanis" 
     },
     {
       "id":3, 
       "PDF_path":checklist ,
-      "imagePath":checklist_cover
+      "imagePath":checklist_cover,
+      "imageAlt": "checklist" 
     },
     {
       "id":4,  
       "PDF_path":APOS_Eval_E,
-      "imagePath":APOS_Eval_E_cover  
+      "imagePath":APOS_Eval_E_cover,  
+      "imageAlt": "eval english" 
     },
     {
       "id": 5,
       "PDF_path":APOS_Eval_S,
-      "imagePath":APOS_Eval_S_cover
+      "imagePath":APOS_Eval_S_cover,
+      "imageAlt": "eval spanish" 
     },
     {
       "id":6,
       "PDF_path":fitting_SO_S,
-      "imagePath": fitting_SO_S_cover
+      "imagePath": fitting_SO_S_cover,
+      "imageAlt": "fitting spanish" 
     },
     {
       "id":7,
       "PDF_path":fitting_SO,
-      "imagePath": fitting_SO_cover
+      "imagePath": fitting_SO_cover,
+      "imageAlt": "fitting" 
     },
     {
       "id": 8,
       "PDF_path": follow_up,
-      "imagePath": follow_up_cover
+      "imagePath": follow_up_cover,
+      "imageAlt": "follow up" 
     },
     {
       "id": 9,
       "PDF_path": intake,
-      "imagePath": intake_cover
+      "imagePath": intake_cover,
+      "imageAlt": "intake" 
     },
     {
       "id": 10,
       "PDF_path": questionaire,
-      "imagePath":questionaire_cover
+      "imagePath":questionaire_cover,
+      "imageAlt": "questionaire" 
     },
     {
       "id": 11,
       "PDF_path": puso,
-      "imagePath":puso_cover
+      "imagePath":puso_cover,
+      "imageAlt": "puso" 
     },
     {
       "id": 12,
       "PDF_path": tp,
-      "imagePath": tp_cover
+      "imagePath": tp_cover,
+      "imageAlt": "treatment plan" 
     },
     {
       "id": 13,
       "PDF_path": beneficiary,
-      "imagePath": beneficiary_cover
+      "imagePath": beneficiary_cover,
+      "imageAlt": "beneficiary" 
     }
   ];
   
+  const [aposArray, setAposArray] = useState(aposArr);
 
+  console.log(aposArray)
   // try stack overflow solution to map through both arrays at the same time 
 
   return (
@@ -112,12 +127,10 @@ function APOS() {
              and post 1 year patient evaluations and more in both english and spanish.
           </p>
     </div>  
-        {/* { files.map((file) => {
-          return(
-        <APOSPDF key={file.index} file={file} />
-        );
-        })} */}
-       <APOSPDF />
+    { aposArray.map((apos) => (
+      <APOSPDF key={apos.id} apos={apos}/>
+    ))}
+     
 
     </div>
   )

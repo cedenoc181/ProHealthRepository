@@ -3,13 +3,13 @@ import { FallingLines } from "react-loader-spinner";
 // import tp from "./APOS-files/APOS-TP.pdf";
 // import tpi from "./APOS-Images/APOS-TP-cover.jpg" 
 
-function APOSPDF() {
+function APOSPDF({apos}) {
 
   const [overview, setOverview] = useState(true);
 
   const [isLoading, setIsLoading] = useState(false);
 
-
+console.log(apos)
   const handleRevert = () => {
     setOverview(true);
   };
@@ -31,7 +31,7 @@ function APOSPDF() {
 
   return (
     <div className="container">
- {/* <div className="grid">
+ <div className="grid">
         <div className="image-container">
           {isLoading ? (
             <FallingLines
@@ -45,18 +45,18 @@ function APOSPDF() {
               <p className="image-label"></p>
               <img
                 className="img-thumbnail shadow-2xl hover:border-blue-500 cursor-pointer"
-                src={file.Image_path}
-                alt=""
+                src={apos.imagePath}
+                alt={apos.imageAlt}
                 onClick={handleClick}
               />
             </div>
           ) : (
             <div>
               <iframe
-                title=""
-                id=""
+                title={apos.imageAlt}
+                id={apos.id}
                 style={{ border: "1px" }}
-                src={file.PDF_path}
+                src={apos.PDF_path}
                 frameborder="1"
                 height="650"
                 width="1050"
@@ -67,7 +67,7 @@ function APOSPDF() {
             </div>
           )}
          </div>
-        </div> */}
+        </div>
 
 
 
