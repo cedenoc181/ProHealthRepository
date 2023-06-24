@@ -28,8 +28,6 @@ console.log(pt)
 
 
   return (
-<div className="container">
- <div className="grid flex justify-center">
         <div className="image-container">
           {isLoading ? (
             <FallingLines
@@ -65,8 +63,6 @@ console.log(pt)
             </div>
           )}
          </div>
-        </div>
-    </div>
   )
 }
 

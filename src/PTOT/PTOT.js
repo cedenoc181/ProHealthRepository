@@ -73,15 +73,15 @@ console.log(ptot)
              and returning patient intakes in both english and spanish.
           </p>
     </div>
-
-  <div className="pdf-display">
+<div className="container">
+  <div className="grid flex justify-center">
  
  {ptot.map((ptForms) => (
  <PTOTPDF key={ptForms.id} pt={ptForms}/>
  ))}
  
 
-
+    </div>
    </div>
  </div>
   )
