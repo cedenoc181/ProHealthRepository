@@ -21,28 +21,28 @@ const authArr = [
       "id" : 1,
     "PDF_path": metroplus,
     "imgPath": metroplusImg,
-    "imgAlt": "metroPlus Auth form"
+    "imgAlt": "MetroPlus Auth form"
     }, 
 
     {
       "id" :2 , 
       "PDF_path": empire,
       "imgPath": empireImg,
-      "imgAlt": "empire Auth Form"
+      "imgAlt": "Empire Auth Form"
     }, 
 
     {
       "id" :3 ,
       "PDF_path": orthonet,
       "imgPath": orthonetImg,
-      "imgAlt": "orthonet Auth Form"
+      "imgAlt": "Orthonet Auth Form"
     },
 
     {
       "id" :4 ,
       "PDF_path": palladian,
       "imgPath": palladianImg,
-      "imgAlt": "palladian Auth Form"
+      "imgAlt": "Palladian Auth Form"
     }
 ];
 
