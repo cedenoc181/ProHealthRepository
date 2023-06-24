@@ -31,7 +31,7 @@ console.log(apos)
 
   return (
     <div className="container">
- <div className="grid">
+ <div className="grid flex justify-center">
         <div className="image-container">
           {isLoading ? (
             <FallingLines
@@ -42,7 +42,7 @@ console.log(apos)
             />
           ) : overview ? (
             <div>
-              <p className="image-label"></p>
+              <p className="image-label">{apos.imageAlt}</p>
               <img
                 className="img-thumbnail shadow-2xl hover:border-blue-500 cursor-pointer"
                 src={apos.imagePath}

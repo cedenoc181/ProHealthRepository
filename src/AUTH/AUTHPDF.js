@@ -28,7 +28,7 @@ console.log(arr)
 
   return (
     <div className="container">
- <div className="grid">
+ <div className="grid flex justify-center">
         <div className="image-container">
           {isLoading ? (
             <FallingLines
@@ -39,7 +39,7 @@ console.log(arr)
             />
           ) : overview ? (
             <div>
-              <p className="image-label"> </p>
+              <p className="image-label">{arr.imgAlt}</p>
               <img
                 className="img-thumbnail shadow-2xl hover:border-blue-500 cursor-pointer"
                 src={arr.imgPath}

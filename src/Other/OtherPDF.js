@@ -30,7 +30,7 @@ console.log(other)
 
   return (
 <div className="container">
- <div className="grid">
+ <div className="grid flex justify-center">
         <div className="image-container">
           {isLoading ? (
             <FallingLines
@@ -41,7 +41,7 @@ console.log(other)
             />
           ) : overview ? (
             <div>
-              <p className="image-label"></p>
+              <p className="image-label">{other.title}</p>
               <img
                 className="img-thumbnail shadow-2xl hover:border-blue-500 cursor-pointer"
                 src={other.image_path}
