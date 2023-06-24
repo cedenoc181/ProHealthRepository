@@ -114,13 +114,13 @@ const othersArr = [
                         "id": 9, 
                         "PDF_path": pt_beneficiary,
                         "image_path": pt_beneficiary_cover,
-                        "title": "therapy beneficiary form"
+                        "title": "Therapy beneficiary form"
                         },  
                         {
                           "id": 10, 
                           "PDF_path": pt_beneficiary_S,
                           "image_path": pt_beneficiary_S_cover,
-                          "title": "therapy beneficiary form spanish"
+                          "title": "Therapy beneficiary form spanish"
                           }
 ]
 
