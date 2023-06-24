@@ -51,8 +51,8 @@ console.log(pt)
           ) : (
             <div>
               <iframe
-                title=""
-                id=""
+                title={pt.title}
+                id={pt.id}
                 style={{ border: "1px" }}
                 src={pt.PDF_path}
                 frameborder="1"
