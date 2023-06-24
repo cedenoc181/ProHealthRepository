@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { FallingLines } from "react-loader-spinner";
 
-function OtherPDF() {
+function OtherPDF({other}) {
 
   const [overview, setOverview] = useState(true);
 
   const [isLoading, setIsLoading] = useState(false);
 
+console.log(other)
 
   const handleRevert = () => {
     setOverview(true);
@@ -43,18 +44,18 @@ function OtherPDF() {
               <p className="image-label"></p>
               <img
                 className="img-thumbnail shadow-2xl hover:border-blue-500 cursor-pointer"
-                src=""
-                alt=""
+                src={other.image_path}
+                alt={other.title}
                 onClick={handleClick}
               />
             </div>
           ) : (
             <div>
               <iframe
-                title=""
-                id=""
+                title={other.title}
+                id={other.id}
                 style={{ border: "1px" }}
-                src=""
+                src={other.PDF_path}
                 frameborder="1"
                 height="650"
                 width="1050"
