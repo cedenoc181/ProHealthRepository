@@ -1,0 +1,10 @@
+.apos{
+    overflow:scroll;
+}
+.close {
+    text-decoration: underline;
+}
+
+.close:hover {
+    color: blue;
+}
