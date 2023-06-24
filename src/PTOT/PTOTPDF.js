@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { FallingLines } from "react-loader-spinner";
 
-function PTOTPDF() {
+function PTOTPDF({pt}) {
 
   const [overview, setOverview] = useState(true);
 
   const [isLoading, setIsLoading] = useState(false);
 
-
+console.log(pt)
   const handleRevert = () => {
     setOverview(true);
   };
@@ -43,8 +43,8 @@ function PTOTPDF() {
               <p className="image-label"></p>
               <img
                 className="img-thumbnail shadow-2xl hover:border-blue-500 cursor-pointer"
-                src=""
-                alt=""
+                src={pt.image_path}
+                alt={pt.title}
                 onClick={handleClick}
               />
             </div>
@@ -54,10 +54,10 @@ function PTOTPDF() {
                 title=""
                 id=""
                 style={{ border: "1px" }}
-                src=""
+                src={pt.PDF_path}
                 frameborder="1"
-                height="450"
-                width="450"
+                height="650"
+                width="1050"
               ></iframe>
               <button className="close mt-5" onClick={handleRevert}>
                 Close
