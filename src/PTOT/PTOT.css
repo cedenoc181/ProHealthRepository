@@ -11,6 +11,60 @@ img {
     color: blue;
 }
 
-.ptot{
-    overflow:scroll;
-}
+.ptot {
+    overflow: scroll;
+  }
+  
+  .img-thumbnail {
+    max-width: 400px;
+    max-height: 400px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    transition: transform 0.2s;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .container {
+    background-color: #f2f2f2;
+    height: 800px;
+    overflow: auto;
+    border-top-width: 1px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .grid .img-thumbnail {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .img-thumbnail:hover {
+    transform: scale(1.03);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
+    filter: brightness(70%);
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .image-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 1rem;
+  }

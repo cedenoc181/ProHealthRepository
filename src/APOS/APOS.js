@@ -38,79 +38,79 @@ function APOS() {
       "id": 1,
       "PDF_path": post_one_E,
       "imagePath":post_one_E_cover,
-      "imageAlt": "post one year" 
+      "imageAlt": "APOS Post Year Intake" 
     },
     {
       "id":2,
       "PDF_path": post_one_S,
       "imagePath":post_one_S_cover,
-      "imageAlt": "post one year spanis" 
+      "imageAlt": "APOS Post Year Intake spanish" 
     },
     {
       "id":3, 
       "PDF_path":checklist ,
       "imagePath":checklist_cover,
-      "imageAlt": "checklist" 
+      "imageAlt": "APOS Checklist" 
     },
     {
       "id":4,  
       "PDF_path":APOS_Eval_E,
       "imagePath":APOS_Eval_E_cover,  
-      "imageAlt": "eval english" 
+      "imageAlt": "APOS Evaluation" 
     },
     {
       "id": 5,
       "PDF_path":APOS_Eval_S,
       "imagePath":APOS_Eval_S_cover,
-      "imageAlt": "eval spanish" 
+      "imageAlt": "APOS Evaluation spanish" 
     },
     {
       "id":6,
       "PDF_path":fitting_SO_S,
       "imagePath": fitting_SO_S_cover,
-      "imageAlt": "fitting spanish" 
+      "imageAlt": "Fitting form spanish" 
     },
     {
       "id":7,
       "PDF_path":fitting_SO,
       "imagePath": fitting_SO_cover,
-      "imageAlt": "fitting" 
+      "imageAlt": "Fitting form" 
     },
     {
       "id": 8,
       "PDF_path": follow_up,
       "imagePath": follow_up_cover,
-      "imageAlt": "follow up" 
+      "imageAlt": "Follow Up form" 
     },
     {
       "id": 9,
       "PDF_path": intake,
       "imagePath": intake_cover,
-      "imageAlt": "intake" 
+      "imageAlt": "APOS Intake" 
     },
     {
       "id": 10,
       "PDF_path": questionaire,
       "imagePath":questionaire_cover,
-      "imageAlt": "questionaire" 
+      "imageAlt": "APOS Questionaire" 
     },
     {
       "id": 11,
       "PDF_path": puso,
       "imagePath":puso_cover,
-      "imageAlt": "puso" 
+      "imageAlt": "APOS Pick up form" 
     },
     {
       "id": 12,
       "PDF_path": tp,
       "imagePath": tp_cover,
-      "imageAlt": "treatment plan" 
+      "imageAlt": "APOS Treatment Plan" 
     },
     {
       "id": 13,
       "PDF_path": beneficiary,
       "imagePath": beneficiary_cover,
-      "imageAlt": "beneficiary" 
+      "imageAlt": "APOS Beneficiary form" 
     }
   ];
   
