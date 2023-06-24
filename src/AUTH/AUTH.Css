@@ -2,3 +2,15 @@ img {
     max-height: 500px;
     max-width: 600px;
 }
+
+.close {
+    text-decoration: underline;
+}
+
+.close:hover {
+    color: blue;
+}
+
+.auth{ 
+    overflow:scroll;
+}

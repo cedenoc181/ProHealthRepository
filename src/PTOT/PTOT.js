@@ -67,7 +67,6 @@ console.log(ptot)
 
   return (
 <div className="ptot bg-gray-100 w-fill h-screen">
-
     <div className="Prompt">
           <p className="p-10 font-semibold text-gray-600 text-3xl text-center">
             Physical and Occupational Therapy PDF's regarding new patient intakes 

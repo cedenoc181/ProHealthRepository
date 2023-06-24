@@ -1,6 +1,11 @@
 .apos{
     overflow:scroll;
 }
+img {
+    max-height: 500px;
+    max-width: 600px;
+}
+
 .close {
     text-decoration: underline;
 }

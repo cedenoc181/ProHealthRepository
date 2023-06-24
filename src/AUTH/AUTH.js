@@ -51,7 +51,7 @@ const authArr = [
 console.log(arr)
 
   return (
-    <div className="bg-gray-100 w-fill h-screen">
+    <div className="auth bg-gray-100 w-fill h-screen">
           <div className="Prompt">
           <p className="p-10 font-semibold text-gray-600 text-3xl text-center">
             Authorization PDF's available below, Orthonet, MetroPlus and more.
