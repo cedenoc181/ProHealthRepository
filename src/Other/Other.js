@@ -135,12 +135,14 @@ console.log(otherFiles)
             Single page PDF's, APOS forms, MD letter layouyts and more can be found here in both english and spanish.
           </p>
     </div>  
+    <div className="container">
+  <div className="grid flex justify-center">
 
 {otherFiles.map((other) => (
  <OtherPDF key={other.id} other={other}/>
 ))}
-
-      
+    </div>
+    </div>
     </div>
   )
 }

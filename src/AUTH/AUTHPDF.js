@@ -27,8 +27,6 @@ console.log(arr)
   }, [isLoading]);
 
   return (
-    <div className="container">
- <div className="grid flex justify-center">
         <div className="image-container">
           {isLoading ? (
             <FallingLines
@@ -63,11 +61,6 @@ console.log(arr)
             </div>
           )}
          </div>
-        </div>
-
-
-
-    </div>
   )
 }
 

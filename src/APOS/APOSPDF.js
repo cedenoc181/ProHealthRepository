@@ -30,8 +30,6 @@ console.log(apos)
   console.log();
 
   return (
-    <div className="container">
- <div className="grid flex justify-center">
         <div className="image-container">
           {isLoading ? (
             <FallingLines
@@ -67,12 +65,7 @@ console.log(apos)
             </div>
           )}
          </div>
-        </div>
-
-
-
-    </div>
   )
-}
+}                  
 
 export default APOSPDF

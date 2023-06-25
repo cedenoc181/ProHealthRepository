@@ -57,9 +57,13 @@ console.log(arr)
             Authorization PDF's available below, Orthonet, MetroPlus and more.
           </p>
     </div> 
+    <div className="container">
+  <div className="grid flex justify-center">
  { arr.map((arr) => (
   <AuthPDF key={arr.id} arr={arr} />
  ))}
+    </div>
+    </div>
     </div>
   )
 }

@@ -127,11 +127,15 @@ function APOS() {
              and post 1 year patient evaluations and more in both english and spanish.
           </p>
     </div>  
+    <div className="container">
+  <div className="grid flex justify-center">
     { aposArray.map((apos) => (
       <APOSPDF key={apos.id} apos={apos}/>
     ))}
      
 
+    </div>
+    </div>
     </div>
   )
 }
