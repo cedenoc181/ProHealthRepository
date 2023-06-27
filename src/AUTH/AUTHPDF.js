@@ -55,6 +55,7 @@ console.log(arr)
                 height="600"
                 width="500"
               ></iframe>
+              <p className="frame-label">{arr.imgAlt}</p>
               <button className="close mt-5" onClick={handleRevert}>
                 Close
               </button>

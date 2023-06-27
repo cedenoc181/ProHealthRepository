@@ -58,6 +58,7 @@ console.log(other)
                 height="600"
                 width="500"
               ></iframe>
+              <p className="frame-label">{other.title}</p>
               <button className="close mt-5" onClick={handleRevert}>
                 Close
               </button>
