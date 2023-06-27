@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import "./APOS.css";
+import "./apos.css";
 import APOSPDF from "./APOSPDF";
 // APOS pdf
 import post_one_E from "./APOS-files/APOS-1-Year-intake-E.pdf"

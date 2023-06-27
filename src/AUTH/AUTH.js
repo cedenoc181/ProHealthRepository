@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import "./AUTH.css";
+import "./Auth.css";
 import AuthPDF from "./AUTHPDF";
 // pdf files
 import metroplus from "./Auth-files/Auth-MetroPlus.pdf";

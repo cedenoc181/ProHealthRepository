@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import PTOTPDF from "./PTOTPDF";
-import "./PTOT.css";
+import "./ptot.css";
 // ptot files 
 import beneficiary_S from "./PTOT-files/PTOT-HF-Acknowledgement-Spanish.pdf"
 import beneficiary from "./PTOT-files/PTOT-HF-Acknowledgement.pdf"
