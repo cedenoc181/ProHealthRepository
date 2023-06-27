@@ -68,3 +68,15 @@ img {
     color: white;
     font-size: 1rem;
   }
+
+  .frame-label {
+    /* position: absolute; */
+    /* top: 0;
+    left: 0; */
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 1rem;
+  }

@@ -56,9 +56,10 @@ console.log(apos)
                 style={{ border: "1px" }}
                 src={apos.PDF_path}
                 frameborder="1"
-                height="650"
-                width="1050"
+                height="600"
+                width="500"
               ></iframe>
+              <p className="frame-label">{apos.imageAlt}</p>
               <button className="close mt-5" onClick={handleRevert}>
                 Close
               </button>

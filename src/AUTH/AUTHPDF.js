@@ -52,8 +52,8 @@ console.log(arr)
                 style={{ border: "1px" }}
                 src={arr.PDF_path}
                 frameborder="1"
-                height="500"
-                width="600"
+                height="600"
+                width="500"
               ></iframe>
               <button className="close mt-5" onClick={handleRevert}>
                 Close

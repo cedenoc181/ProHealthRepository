@@ -54,9 +54,10 @@ console.log(pt)
                 style={{ border: "1px" }}
                 src={pt.PDF_path}
                 frameborder="1"
-                height="650"
-                width="1050"
+                height="600"
+                width="500"
               ></iframe>
+              <p className="frame-label">{pt.title}</p>
               <button className="close mt-5" onClick={handleRevert}>
                 Close
               </button>
