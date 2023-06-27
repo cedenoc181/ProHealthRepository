@@ -116,7 +116,7 @@ function APOS() {
   
   const [aposArray, setAposArray] = useState(aposArr);
 
-  console.log(aposArray)
+  console.log(setAposArray)
   // try stack overflow solution to map through both arrays at the same time 
 
   return (

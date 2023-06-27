@@ -126,7 +126,7 @@ const othersArr = [
 
 const [otherFiles, setOtherFiles] = useState(othersArr)
 
-console.log(otherFiles)
+console.log(setOtherFiles)
 
   return (
     <div className="other bg-gray-100 w-fill h-screen">

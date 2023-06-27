@@ -62,7 +62,7 @@ const ptotArr = [
 const [ptot, setPtot] = useState(ptotArr)
 
 
-console.log(ptot)
+console.log(setPtot)
 
 
   return (

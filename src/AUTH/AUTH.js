@@ -48,7 +48,7 @@ const authArr = [
 
   const [arr, setArr] = useState(authArr)
 
-console.log(arr)
+console.log(setArr)
 
   return (
     <div className="auth bg-gray-100 w-fill h-screen">
