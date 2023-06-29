@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Nav.css"
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import logo from "../prohealth-logo.png";
 
 function Nav() {
@@ -16,50 +16,49 @@ function Nav() {
           </a>
         </div>
         <li class="mt-6 mr-1">
-          <NavLink
+          <a
             className="active-link bg-white inline-block border-gray-500 rounded-t py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold cursor-pointer"
-            exact
-            to="/"
+            href="/"
             id="home"
           >
             Home
-          </NavLink>
+          </a>
         </li>
         <li class="mt-6 mr-1">
-          <NavLink
+          <a
             className="active-link bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold cursor-pointer"
-            to="/PTOT"
+            href="/PTOT"
             id="PTOT"
           >
             Physical and Occupational therapy
-          </NavLink>
+          </a>
         </li>
         <li class="mt-6 mr-1">
-          <NavLink
+          <a
             className="active-link bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold cursor-pointer"
-            to="/APOS"
+            href="/APOS"
             id="APOS"
           >
             APOS therapy
-          </NavLink>
+          </a>
         </li>
         <li class="mt-6 mr-1">
-          <NavLink
+          <a
             className="active-link bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold cursor-pointer"
-            to="/Auth"
+            href="/Auth"
             id="Auth"
           >
             Authorization
-          </NavLink>
+          </a>
         </li>
         <li class="mt-6 mr-1">
-          <NavLink
+          <a
             className="active-link bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold cursor-pointer"
-            to="/Other"
+            href="/Other"
             id="Other"
           >
             Other documents
-          </NavLink>
+          </a>
         </li>
         {/* <form class="flex ml-auto">
           <input

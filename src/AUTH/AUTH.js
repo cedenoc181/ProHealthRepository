@@ -12,6 +12,9 @@ import metroplusImg from "./Auth-Images/Auth-MetroPlus.jpg";
 import empireImg from "./Auth-Images/Auth-Empire.jpg" ;
 import orthonetImg from "./Auth-Images/Auth-Orthonet.jpg";
 import palladianImg from "./Auth-Images/Auth-Palladian.jpg";
+// import { RotatingSquare } from "react-loader-spinner";
+
+
 
 function AUTH() {
 
@@ -47,23 +50,28 @@ const authArr = [
 ];
 
   const [arr, setArr] = useState(authArr)
-
 console.log(setArr)
+
+
+
+
 
   return (
     <div className="auth bg-gray-100 w-fill h-screen">
-          <div className="Prompt">
+
+   <div className="Prompt">
           <p className="p-10 font-semibold text-gray-600 text-3xl text-center">
             Authorization PDF's available below, Orthonet, MetroPlus and more.
           </p>
-    </div> 
+   </div>
     <div className="container">
   <div className="grid flex justify-center">
  { arr.map((arr) => (
   <AuthPDF key={arr.id} arr={arr} />
  ))}
+
     </div>
-    </div>
+    </div> 
     </div>
   )
 }
