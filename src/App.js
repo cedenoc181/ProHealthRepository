@@ -1,7 +1,6 @@
 import {Routes, Route} from "react-router-dom"
 // import {useState, useEffect} from "react";
 import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/js/bootstrap.js';
 import './App.css';
 import Home from "./Home/Home";
 import Nav from "./Nav/Nav";
@@ -20,7 +19,7 @@ function App() {
 //   .then(data => setAposFiles(data))
 // },[])
 
-console.log();
+// console.log();
 
 
   return (
