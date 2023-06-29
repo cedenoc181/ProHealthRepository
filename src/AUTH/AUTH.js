@@ -61,7 +61,7 @@ console.log(setArr)
 
    <div className="Prompt">
           <p className="p-10 font-semibold text-gray-600 text-3xl text-center">
-            Authorization PDF's available below, Orthonet, MetroPlus and more.
+            Authorization PDF's available below, Orthonet, MetroPlus and more. Try out the Fillable feauture!
           </p>
    </div>
     <div className="container">
